@@ -1,0 +1,3 @@
+[submodule "devfiles/tp-kafka-devfile"]
+	path = devfiles/tp-kafka-devfile
+	url = git@github.com:tp-kafka/tp-kafka-devfile.git
