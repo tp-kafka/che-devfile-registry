@@ -16,7 +16,10 @@ jobs:
       run: find -type f 
 
     - name: Run build
-      run: ./build.sh  --registry=""  --organization="i3oot" --tag="latest"
+      run: ./build.sh  --registry reg  --organization i3oot --tag latest
+
+    - name: Docker Re-Tag
+      run: docker tag reg/i3oot/che-devfile-registry:latest i3oot/che-devfile-registry:latest
 
     - name: Docker Login
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
