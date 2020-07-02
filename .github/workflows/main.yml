@@ -10,7 +10,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        submodules: true
+        submodules: 'recursive'
    
     - name: Run build
       run: ./build.sh  --organization i3oot --tag latest
