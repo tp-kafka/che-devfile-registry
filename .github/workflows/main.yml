@@ -18,10 +18,10 @@ jobs:
     - name: Run build
       run: ./build.sh  --registry  --organization i3oot --tag latest
 
-    - uses: docker/build-push-action@v1
-      with:
-        username: ${{ secrets.DOCKER_USER }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: ""
-        repository: i3oot/che-devfile-registry
-        tags: latest
+    - name: Docker Login
+      run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Docker Push
+      run: docker push i3oot/che-devfile-registry:latest
+
+
