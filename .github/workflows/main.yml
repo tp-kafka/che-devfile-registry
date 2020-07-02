@@ -12,6 +12,9 @@ jobs:
       with:
         submodules: 'recursive'
    
+    - name: List files
+      run: find -type f 
+
     - name: Run build
       run: ./build.sh  --registry rg.fr-par.scw.cloud --offline --organization i3oot --tag latest
 
