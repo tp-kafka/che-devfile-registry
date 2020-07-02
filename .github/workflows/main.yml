@@ -16,7 +16,7 @@ jobs:
       run: find -type f 
 
     - name: Run build
-      run: ./build.sh  --registry  --organization i3oot --tag latest
+      run: ./build.sh  --registry=""  --organization="i3oot" --tag="latest"
 
     - name: Docker Login
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
