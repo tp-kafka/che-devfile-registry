@@ -16,7 +16,7 @@ jobs:
       run: find -type f 
 
     - name: Run build
-      run: ./build.sh  --registry rg.fr-par.scw.cloud --offline --organization i3oot --tag latest
+      run: ./build.sh  --registry rg.fr-par.scw.cloud --organization i3oot --tag latest
 
     - uses: docker/build-push-action@v1
       with:
