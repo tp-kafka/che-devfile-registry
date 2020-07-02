@@ -15,7 +15,7 @@ jobs:
 
     - uses: docker/build-push-action@v1
       with:
-        username: _json_key
+        username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: ""
         repository: i3oot/che-devfile-registry
