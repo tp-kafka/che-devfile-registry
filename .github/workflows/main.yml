@@ -13,10 +13,10 @@ jobs:
     - name: Run build
       run: ./build.sh --registry --organisation i3oot --tag latest
 
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+    - uses: docker/build-push-action@v1
       with:
-        name: i3oot/che-devfile-registry:latest
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: _json_key
         password: ${{ secrets.DOCKER_PASSWORD }}
-        tags: "latest"
+        registry: ""
+        repository: i3oot/che-devfile-registry
+        tags: latest
