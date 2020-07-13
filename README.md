@@ -3,7 +3,7 @@
 [![Release Build Status](https://ci.centos.org/buildStatus/icon?subject=release&job=devtools-che-devfile-registry-release/)](https://ci.centos.org/job/devtools-che-devfile-registry-release/)
 [![Preview Release Build Status](https://ci.centos.org/buildStatus/icon?subject=release-preview&job=devtools-che-devfile-registry-release-preview/)](https://ci.centos.org/job/devtools-che-devfile-registry-release-preview/)
 
-# Eclipse Che devfile registry
+# Eclipse Che devfile registry 
 
 This repository holds ready-to-use Devfiles for different languages and technologies.
 
@@ -87,4 +87,4 @@ The following [CentOS CI jobs](https://ci.centos.org/) are associated with the r
 
 ### License
 
-Che is open sourced under the Eclipse Public License 2.0.
+Che is open sourced under the Eclipse Public License 2.0. 
