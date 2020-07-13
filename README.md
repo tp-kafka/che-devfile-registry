@@ -87,4 +87,4 @@ The following [CentOS CI jobs](https://ci.centos.org/) are associated with the r
 
 ### License
 
-Che is open sourced under the Eclipse Public License 2.0.
+Che is open sourced under the Eclipse Public License 2.0. 
